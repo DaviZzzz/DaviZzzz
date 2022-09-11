@@ -55,6 +55,7 @@ function validateItem(name, images) {
 
 function deleteValidation(user_id, id, collections) {
   let owner_id = 1;
+  ;
   if (user_id != owner_id) return "No tienes acceso a esta colección";
   if (!collections.find(n => n.id == id)) return "Colección no existente";
   return null;
